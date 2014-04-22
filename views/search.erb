@@ -1,0 +1,9 @@
+<!-- This is the search results (list) view. -->
+
+<h2>Click on a title to see more information. </h2>
+
+	<% @movies.each do |movie| %>
+	<a href="/movie/<%=movie['id']%>"> <%= movie["title"] %> - <%= movie["year"] %><br></br></a> 
+	inside the loop<br>
+<% end %>
+outside the loop
